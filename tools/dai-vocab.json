@@ -1,0 +1,27 @@
+{
+    "formatVersion": "2",
+    "task": "Dictionary",
+    "deployment": "production",
+    "name": "iDAI.vocab",
+    "logo": "dai-vocab.png",
+    "homepage": "https://archwort.dainst.org",
+    "location": "Berlin, Germany",
+    "creators": "German Archaeological Institute (DAI)",
+    "contact": {
+        "person": "",
+        "email": "idai.vocab@dainst.de"
+    },
+    "version": "0.1",
+    "authentication": null,
+    "licence": null,
+    "description": "The German Archaeological Institute is a scientific institution of the confederation in the business area of the Department of Foreign Affairs.",
+    "url": "https://archwort.dainst.org/de/search/",
+    "inputs": {
+        "text": {
+            "mediatype": ["text/plain"],
+            "languages": "generic"
+        }
+    },
+    "output": ["text/plain"],
+    "pathParameters": [{"param": "text", "value":"content"}]
+}
