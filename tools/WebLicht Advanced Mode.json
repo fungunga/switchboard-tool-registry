@@ -16,16 +16,16 @@
     "licence": null,
     "description": "This tool links to the WebLicht environment without preselecting an execution chain. WebLicht is an execution environment for automatic annotation of text corpora. Linguistic tools such as tokenizers, part of speech taggers, and parsers are encapsulated as web services, which can be combined by the user into custom processing chains. The resulting annotations can then be visualized in an appropriate way, such as in a table or tree format.",
     "url": "https://weblicht.sfs.uni-tuebingen.de/weblicht/",
-    "inputs": {
-        "text": {
-            "mediatype": ["text/plain", "text/rtf", "application/rtf", "application/msword",
-                          "application/vnd.openxmlformats-officedocument.wordprocessingml.document"],
+    "inputs": [
+        {
+            "id": "text",
+            "mediatypes": ["text/plain", "text/rtf", "application/rtf", "application/msword", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"],
             "languages": "generic"
         }
-    },
+    ],
     "output": ["application/tcf+xml"],
-    "queryParameters": {
-        "input": {"param": "text", "value": "dataurl"},
-        "lang": {"param": "text", "value": "language", "encoding": "639-1"}
-    }
+    "queryParameters": [
+        {"name": "input", "bind": "text/dataurl"},
+        {"name": "lang", "bind": "text/language", "encoding": "639-1"}
+    ]
 }

@@ -6,7 +6,7 @@ install:
   - pip3 install fastjsonschema
 script:
   - cd -- schemas/
-  - ./validate-all-tools.py -s ./spec-v1.schema.json -t ../tools
+  - ./validate-all-tools.py -s ./spec-v1.schema.json -s ./spec-v2.schema.json -t ../tools
 notifications:
   email:
     on_success: change
