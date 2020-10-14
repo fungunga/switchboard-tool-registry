@@ -13,9 +13,7 @@
     },
     "version": "v1.0",
     "authentication": "Requires a CLARIN Service Provider Federation account, provided by many universities and institutions.",
-    "licence": null,
     "description": "This tool links to the WebLicht environment without preselecting an execution chain. WebLicht is an execution environment for automatic annotation of text corpora. Linguistic tools such as tokenizers, part of speech taggers, and parsers are encapsulated as web services, which can be combined by the user into custom processing chains. The resulting annotations can then be visualized in an appropriate way, such as in a table or tree format.",
-    "url": "https://weblicht.sfs.uni-tuebingen.de/weblicht/",
     "inputs": [
         {
             "id": "text",
@@ -24,8 +22,12 @@
         }
     ],
     "output": ["application/tcf+xml"],
-    "queryParameters": [
-        {"name": "input", "bind": "text/dataurl"},
-        {"name": "lang", "bind": "text/language", "encoding": "639-1"}
-    ]
+    "webApplication": {
+        "url": "https://weblicht.sfs.uni-tuebingen.de/weblicht/",
+        "queryParameters": [
+            {"name": "input", "bind": "text/dataurl"},
+            {"name": "lang", "bind": "text/language", "encoding": "639-1"}
+        ]
+    }
 }
+

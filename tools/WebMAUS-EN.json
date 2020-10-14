@@ -13,9 +13,7 @@
     },
     "version": null,
     "authentication": null,
-    "licence": null,
     "description": "This web service calculates a phonetic segmentation and labeling for several languages based on the speech signal and the orthographic transcript. Text input is normalized and translated into a canonical phonological transcript encoded in SAM-PA using the BALLOON tool (which can be used in isolation using the G2P interface); the phonological transcript is then transformed into a probabilistic pronunciation graph which is time-aligned to the speech signal in the uploaded media file (which is passed through the service 'AudioEnhance' before alignment).",
-    "url": "https://localhost:8080/x",
     "inputs": [
         {
             "id": "speech",
@@ -50,9 +48,12 @@
         }
     ],
     "output": [],
-    "queryParameters": [
-        {"name": "wav", "bind": "speech/dataurl"},
-        {"name": "text", "bind": "text/dataurl"},
-        {"name": "language", "bind": "text/language"},
-    ]
+    "webApplication": {
+        "url": "https://localhost:8080/x",
+        "queryParameters": [
+            {"name": "wav", "bind": "speech/dataurl"},
+            {"name": "text", "bind": "text/dataurl"},
+            {"name": "language", "bind": "text/language"}
+        ]
+    }
 }

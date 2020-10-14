@@ -13,9 +13,7 @@
     },
     "version": "v1.0",
     "authentication": "Requires a CLARIN Service Provider Federation account, provided by many universities and institutions.",
-    "licence": null,
     "description": "The WebLicht Batch Processor will be able to run WebLicht tool chains on multiple files at once.",
-    "url": "https://localhost:8080/x",
     "inputs": [
         {
             "id": "text",
@@ -30,5 +28,8 @@
         "queryParameters": [
             {"name": "zip", "bind": "zipurl"}
         ]
+    },
+    "webApplication": {
+        "url": "https://localhost:8080/x"
     }
 }

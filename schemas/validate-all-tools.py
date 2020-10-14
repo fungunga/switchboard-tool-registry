@@ -68,7 +68,11 @@ def validate_tools():
         print("Validating", filepath)
         failures = []
         with open(filepath) as file:
-            json_data = json.loads(file.read())
+            try:
+                json_data = json.loads(file.read())
+            except json.JSONDecodeError as xc:
+                print("! JSON decoding error: file {}\n\t{}".format(filepath, xc))
+                sys.exit(2)
             for validate in validate_fns:
                 try:
                     validate(json_data)
