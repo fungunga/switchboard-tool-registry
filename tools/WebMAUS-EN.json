@@ -3,7 +3,7 @@
     "task": "Speech segmentation",
     "deployment": "development",
     "name": "WebMAUS-EN",
-    "logo": "webmaus.jpg",
+    "logo": "webmaus.png",
     "homepage": "https://clarin.phonetik.uni-muenchen.de/BASWebServices/interface/WebMAUSBasic",
     "location": "München, Germany",
     "creators": "Florian Schiel, Andreas Kipp, Thomas Kisler",
