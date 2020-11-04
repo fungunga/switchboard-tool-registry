@@ -293,7 +293,8 @@
                 "languages": {"oneOf": [
                     {"type": "string"},
                     {"type":"array", "items": {"$ref": "#/definitions/language_code_3"}}
-                ]}
+                ]},
+                "maxSize": {"type": "integer"}
             },
             "additionalProperties": false
         },

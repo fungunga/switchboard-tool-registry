@@ -18,7 +18,8 @@
         {
             "id": "text",
             "mediatypes": ["text/plain", "text/rtf", "application/rtf", "application/msword", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"],
-            "languages": "generic"
+            "languages": "generic",
+            "maxSize": 10240000
         }
     ],
     "output": ["application/tcf+xml"],
